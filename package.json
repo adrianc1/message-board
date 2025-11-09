@@ -1,0 +1,20 @@
+{
+	"dependencies": {
+		"ejs": "^3.1.10",
+		"express": "^5.1.0"
+	},
+	"name": "message-board",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"devDependencies": {},
+	"scripts": {
+		"start": "node --env-file=.env index.js",
+		"dev": "node --watch app.js",
+		"test": "node --test"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs"
+}
