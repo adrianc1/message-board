@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 			added: new Date(),
 		},
 	];
-	res.render('index', { message: 'EJS rocks!', title: 'Message Board' });
+	res.render('index', { title: 'Mini Messageboard', messages: messages });
 });
 
 app.get('/new', (req, res) => {});

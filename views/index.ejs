@@ -3,6 +3,12 @@
 		<title><%= title %></title>
 	</head>
 	<body>
-		<span><%= message %></span>
+		<ul>
+			<% messages.forEach((message) => { %>
+			<li>User: <%= message.user %></li>
+			<li>Message: <%= message.text %></li>
+			<li>Added: <%= message.added %></li>
+			<% }); %>
+		</ul>
 	</body>
 </html>
