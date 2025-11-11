@@ -21,4 +21,8 @@ messageRouter.get('/new', (req, res) => {
 	res.render('form');
 });
 
+messageRouter.post('/new', (req, res) => {
+	res.status(200).render('form');
+});
+
 module.exports = messageRouter;
