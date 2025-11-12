@@ -3,6 +3,9 @@
 		<title><%= title %></title>
 	</head>
 	<body>
+		<a href="/new">
+			<h3>Submit New Message</h3>
+		</a>
 		<ul>
 			<% messages.forEach((message) => { %>
 			<li>User: <%= message.user %></li>
