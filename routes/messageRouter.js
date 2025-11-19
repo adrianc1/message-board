@@ -8,13 +8,9 @@ messageRouter.get('/new', (req, res) => {
 	res.render('form');
 });
 
-messageRouter.post('/new', (req, res) => {
+messageRouter.post('/new', async (req, res) => {
 	res.status(200);
-	messages.push({
-		text: req.body.message,
-		user: req.body.name,
-		added: new Date(),
-	});
+	await messageContoller.createNewPost(req, res);
 	res.redirect('/');
 });
 

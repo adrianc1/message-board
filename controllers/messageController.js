@@ -12,9 +12,8 @@ async function getMessages(req, res) {
 }
 
 async function createNewPost(req, res) {
-	const { user, message } = req.body;
-	await db.addMessage(user, message);
-	res.redirect('/');
+	const { username, message } = req.body;
+	await db.addMessage(username, message);
 }
 
 module.exports = {
