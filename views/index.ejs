@@ -8,9 +8,9 @@
 		</a>
 		<ul>
 			<% messages.forEach((message) => { %>
-			<li>User: <%= message.user %></li>
-			<li>Message: <%= message.text %></li>
-			<li>Added: <%= message.added %></li>
+			<li>User: <%= message.username %></li>
+			<li>Message: <%= message.message %></li>
+			<li>Added: <%= message.created_at %></li>
 			<% }); %>
 		</ul>
 	</body>
