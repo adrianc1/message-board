@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"dotenv": "^17.2.3",
 		"ejs": "^3.1.10",
 		"express": "^5.1.0",
 		"pg": "^8.16.3"
@@ -11,7 +12,8 @@
 	"scripts": {
 		"start": "node --env-file=.env index.js",
 		"dev": "node --watch app.js",
-		"test": "node --test"
+		"test": "node --test",
+		"create db": "node --env-file=.env db/populatedb.js"
 	},
 	"keywords": [],
 	"author": "",
